@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('../../../public/images/h1c.png') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-content {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title {
+    font-family: 'Playfair Display', serif !important;
+    color: #ffffff !important;
+    text-align: center;
+    margin-bottom: 8px !important;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+}
+
+.login-subtitle {
+    font-family: 'Poppins', sans-serif !important;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-size: 0.85rem !important;
+}
+
+.login-form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-input-field {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 6px;
+}
+
+.input-field .MuiOutlinedInput-root {
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.input-field .MuiInputLabel-root {
+    font-size: 0.85rem;
+    color: #666666 !important;
+}
+
+.login-submit-button {
+    background-color: #6B4423 !important;
+    color: white !important;
+    padding: 8px !important;
+    height: 40px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.9rem !important;
+    text-transform: none !important;
+    border-radius: 6px !important;
+    margin-top: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.login-submit-button:hover {
+    background-color: #8B593A !important;
+    transform: translateY(-1px);
+}
+
+.forgot-password {
+    text-align: center;
+    margin-top: 12px !important;
+}
+
+.forgot-password-button {
+    color: #e0e0e0 !important;
+    font-size: 0.8rem !important;
+}
+
+.forgot-password-button:hover {
+    background-color: transparent !important;
+    text-decoration: underline !important;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 16px !important;
+    font-family: 'Poppins', sans-serif !important;
+    color: #e0e0e0 !important;
+    font-size: 0.85rem !important;
+}
+
+.signup-button {
+    color: #ffffff !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: none !important;
+    font-size: 0.85rem !important;
+    padding: 4px 8px !important;
+    height: 32px !important;
+    background-color: #6B4423 !important;
+    border-radius: 4px !important;
+    margin-left: 8px !important;
+}
+
+.signup-button:hover {
+    background-color: #8B593A !important;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    .login-content {
+        padding: 30px 20px;
+    }
+
+    .login-title {
+        font-size: 2rem !important;
+    }
+
+    .login-subtitle {
+        font-size: 0.9rem !important;
+    }
+}

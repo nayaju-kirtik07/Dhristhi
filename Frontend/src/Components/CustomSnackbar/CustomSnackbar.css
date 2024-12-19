@@ -1,0 +1,40 @@
+.custom-snackbar {
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-alert {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.95rem !important;
+  padding: 12px 24px !important;
+  border-radius: 8px !important;
+  min-width: 300px !important;
+}
+
+.custom-alert.success {
+  background-color: #2e7d32 !important;
+  color: white !important;
+}
+
+.custom-alert.error {
+  background-color: #d32f2f !important;
+  color: white !important;
+}
+
+.custom-alert .MuiAlert-icon {
+  color: white !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.MuiSnackbar-root {
+  animation: slideIn 0.3s ease-out;
+} 

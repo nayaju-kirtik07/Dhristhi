@@ -1,0 +1,98 @@
+.filter-drawer .MuiDrawer-paper {
+    width: 300px;
+    background-color: #fff;
+}
+
+.filter-container {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.filter-content {
+    flex-grow: 1;
+    padding: 20px 0;
+}
+
+.price-slider {
+    color: #6B4423 !important;
+    margin-top: 20px !important;
+}
+
+.price-range-display {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filter-actions {
+    padding: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.apply-filter {
+    width: 100%;
+    background-color: #6B4423 !important;
+    color: white !important;
+    text-transform: none !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.apply-filter:hover {
+    background-color: #8B593A !important;
+}
+
+[data-theme='dark'] .filter-drawer .MuiDrawer-paper {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+[data-theme='dark'] .filter-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .filter-actions {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .filter-title {
+    color: #8B593A;
+}
+
+[data-theme='dark'] .price-label {
+    color: #ffffff;
+}
+
+[data-theme='dark'] .price-slider {
+    color: #8B593A !important;
+}
+
+[data-theme='dark'] .price-range-display {
+    color: #cccccc;
+}
+
+[data-theme='dark'] .close-button {
+    color: #ffffff;
+}
+
+[data-theme='dark'] .close-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme='dark'] .apply-filter {
+    background-color: #8B593A !important;
+    color: #ffffff !important;
+}
+
+[data-theme='dark'] .apply-filter:hover {
+    background-color: #9B694A !important;
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
+
+.signup-container {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url("../../../public/images/customerservice.png") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-content {
+    background: transparent;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.signup-title {
+    font-family: 'Playfair Display', serif !important;
+    color: #ffffff !important;
+    text-align: center;
+    margin-bottom: 8px !important;
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+}
+
+.signup-subtitle {
+    font-family: 'Poppins', sans-serif !important;
+    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-size: 0.85rem !important;
+}
+
+.signup-form {
+    margin-top: 15px;
+}
+
+.input-field {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 6px !important;
+    margin-bottom: 10px !important;
+}
+
+.input-field .MuiOutlinedInput-root {
+    font-size: 0.85rem;
+}
+
+.input-field .MuiInputLabel-root {
+    font-size: 0.85rem;
+    color: #666666 !important;
+}
+
+.signup-button {
+    background-color: #6B4423 !important;
+    color: #ffffff !important;
+    padding: 8px !important;
+    height: 40px !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 0.9rem !important;
+    text-transform: none !important;
+    border-radius: 6px !important;
+    margin-top: 8px !important;
+}
+
+.signup-button:hover {
+    background-color: #8B593A !important;
+    transform: translateY(-1px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 16px !important;
+    color: #e0e0e0 !important;
+    font-size: 0.85rem !important;
+}
+
+.login-button {
+    color: #ffffff !important;
+    font-size: 0.85rem !important;
+    padding: 4px 8px !important;
+    height: 32px !important;
+    background-color: #6B4423 !important;
+    border-radius: 4px !important;
+    margin-left: 8px !important;
+}
+
+.login-button:hover {
+    background-color: #8B593A !important;
+    transform: translateY(-1px);
+}
+
+.error-message {
+    background-color: rgba(211, 47, 47, 0.1);
+    color: #ff6b6b !important;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 15px !important;
+    font-size: 0.8rem !important;
+}
+
+.MuiGrid-root.MuiGrid-container {
+    gap: 10px !important;
+}
+
+.MuiGrid-item {
+    padding-top: 0 !important;
+}
+
+.name-fields-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.name-field {
+    flex: 1;
+}
+
+.MuiGrid-root.MuiGrid-container {
+    gap: 10px !important;
+    flex-direction: column;
+}
+
+.MuiGrid-item {
+    padding-top: 0 !important;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .name-fields-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

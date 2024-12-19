@@ -1,0 +1,128 @@
+.success-paper {
+    padding: 3rem;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+
+.success-icon {
+    margin-bottom: 2rem;
+}
+
+.success-icon svg {
+    font-size: 4rem;
+    color: #2ecc71;
+    animation: scaleIn 0.5s ease-out;
+}
+
+.success-title {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.success-message {
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+    animation: fadeInUp 0.5s ease-out 0.2s;
+    animation-fill-mode: both;
+}
+
+.order-info {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    text-align: left;
+    animation: fadeInUp 0.5s ease-out 0.4s;
+    animation-fill-mode: both;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    animation: fadeInUp 0.5s ease-out 0.6s;
+    animation-fill-mode: both;
+}
+
+.continue-shopping {
+    background-color: #2ecc71 !important;
+    color: white !important;
+    padding: 0.75rem 2rem !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.continue-shopping:hover {
+    background-color: #27ae60 !important;
+}
+
+.view-orders {
+    color: #2c3e50 !important;
+    border-color: #2c3e50 !important;
+    padding: 0.75rem 2rem !important;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+.view-orders:hover {
+    background-color: #f8f9fa !important;
+    border-color: #1a1a1a !important;
+    color: #1a1a1a !important;
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .success-paper {
+        padding: 2rem 1rem;
+    }
+
+    .success-icon svg {
+        font-size: 3rem;
+    }
+
+    .success-title {
+        font-size: 1.5rem;
+    }
+
+    .order-info {
+        padding: 1.5rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+
+    .continue-shopping,
+    .view-orders {
+        width: 100%;
+    }
+}

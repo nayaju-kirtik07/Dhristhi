@@ -1,0 +1,52 @@
+:root {
+  /* Light theme variables */
+  --background-light: #ffffff;
+  --text-light: #333333;
+  --primary-light: #4A90E2;
+  --secondary-light: #F5F5F5;
+  --accent-light: #FF6B6B;
+
+  /* Dark theme variables */
+  --background-dark: #1a1a1a;
+  --text-dark: #ffffff;
+  --primary-dark: #6BA5E7;
+  --secondary-dark: #2d2d2d;
+  --accent-dark: #FF8585;
+}
+
+body.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+/* Add transition for smooth theme switching */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h2, h4 {
+  color: #333;
+}
+
+button {
+  border-radius: 5px;
+}

@@ -1,0 +1,246 @@
+.contact-page-container {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f5f5f5;
+}
+  
+.contact-hero-section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(rgba(26, 35, 126, 0.85), rgba(26, 35, 126, 0.85)),
+                url('https://img.freepik.com/free-photo/security-system-equipment-dark-background-security-service-concept_1423-4311.jpg?w=1380&t=st=1710414105~exp=1710414705~hmac=c7c5b6a4c7d1f3d9d89c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c') center/cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+/* Alternative background options:
+1. Modern Security Camera:
+url('https://img.freepik.com/free-photo/security-camera-system_53876-94293.jpg?w=1380&t=st=1710414150~exp=1710414750~hmac=c7c5b6a4c7d1f3d9d89c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c')
+
+2. Security Control Room:
+url('https://img.freepik.com/free-photo/cctv-security-camera-monitoring-system-with-blurred-background_53876-124789.jpg?w=1380&t=st=1710414180~exp=1710414780~hmac=c7c5b6a4c7d1f3d9d89c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c')
+
+3. Digital Security:
+url('https://img.freepik.com/free-photo/cyber-security-concept_53876-120802.jpg?w=1380&t=st=1710414200~exp=1710414800~hmac=c7c5b6a4c7d1f3d9d89c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c8d7b4c')
+*/
+
+.contact-hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(26, 35, 126, 0.85), rgba(26, 35, 126, 0.85));
+    z-index: -1;
+}
+
+.contact-hero-section h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-hero-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.contact-content {
+    max-width: 1200px;
+    margin: -50px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-form-section {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(26, 35, 126, 0.1);
+    padding: 40px;
+    margin-bottom: 60px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #1a237e;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.contact-input .MuiOutlinedInput-root {
+    border-radius: 8px;
+}
+
+.contact-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #1a237e;
+}
+
+.contact-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #1a237e;
+}
+
+.contact-input .MuiInputLabel-root.Mui-focused {
+    color: #1a237e;
+}
+
+.submit-button {
+    background-color: #1a237e !important;
+    color: white !important;
+    padding: 12px 40px !important;
+    margin-top: 20px !important;
+    border-radius: 8px !important;
+    font-family: 'Roboto', sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+}
+
+.submit-button:hover {
+    background-color: #283593 !important;
+    box-shadow: 0 4px 12px rgba(26, 35, 126, 0.2) !important;
+}
+
+.contact-details-section {
+    margin: 60px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+.contact-details-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(26, 35, 126, 0.1);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9ff;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.contact-detail:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.15);
+}
+
+.contact-icon {
+    color: #1a237e !important;
+    font-size: 28px !important;
+    background: #e8eaf6;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.detail-text h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #1a237e;
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.detail-text p {
+    color: #424242;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.map-section {
+    width: 100%;
+    height: 450px;
+    margin-bottom: -6px;
+}
+
+.map-section iframe {
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-hero-section {
+        height: 45vh;
+    }
+    
+    .contact-hero-section h1 {
+        font-size: 2.5rem;
+        padding: 0 20px;
+    }
+    
+    .contact-content {
+        margin-top: -30px;
+        padding: 0 15px;
+    }
+    
+    .contact-form-section {
+        padding: 30px 20px;
+    }
+    
+    .contact-details-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .contact-detail {
+        padding: 15px;
+    }
+
+    .form-container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+.dark-mode .contact-page-container {
+    background-color: #121212;
+}
+
+.dark-mode .contact-form-section,
+.dark-mode .contact-details-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .contact-detail {
+    background-color: #262626;
+}
+
+.dark-mode .detail-text h3 {
+    color: #c5cae9;
+}
+
+.dark-mode .detail-text p {
+    color: #bdbdbd;
+}
+
+.dark-mode .contact-icon {
+    background-color: #1a237e;
+    color: #ffffff !important;
+}

@@ -1,0 +1,150 @@
+.order-title {
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.order-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+
+.order-form {
+    margin-top: 2rem;
+}
+
+.form-section-title {
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-section-title svg {
+    color: #3498db;
+}
+
+.order-summary {
+    background-color: #ffffff;
+    border-radius: 12px;
+    position: sticky;
+    top: 20px;
+}
+
+.submit-button {
+    background-color: #2ecc71;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+/* Responsive styles */
+@media (max-width: 960px) {
+    .order-summary {
+        position: static;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .order-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-section-title {
+        font-size: 1.2rem;
+    }
+
+    .order-form {
+        padding: 1rem !important;
+    }
+
+    .order-summary {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Input field styles */
+/* .MuiTextField-root {
+    background-color: #f8f9fa;
+} */
+
+.MuiTextField-root:hover {
+    background-color: #f1f3f5;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+    border-radius: 8px;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root.Mui-focused {
+    background-color: #ffffff;
+}
+
+/* Order summary item styles */
+.order-summary img {
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary .MuiTypography-subtitle1 {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.order-summary .MuiTypography-body2 {
+    color: #7f8c8d;
+}
+
+.order-summary .MuiTypography-subtitle2 {
+    color: #2ecc71;
+    font-weight: 600;
+}
+
+.order-summary .MuiDivider-root {
+    background-color: #ecf0f1;
+}
+
+/* Loading state */
+.MuiCircularProgress-root {
+    color: #ffffff;
+}
+
+/* Error alert styles */
+.MuiAlert-root {
+    border-radius: 8px;
+}
+
+.MuiAlert-standardError {
+    background-color: #fff5f5;
+    color: #c53030;
+}
+
+/* Empty cart message */
+.empty-cart-message {
+    color: #718096;
+    text-align: center;
+    padding: 2rem;
+}
+
+.continue-shopping-button {
+    margin-top: 1rem;
+    background-color: #4299e1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-transform: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.continue-shopping-button:hover {
+    background-color: #3182ce;
+}
